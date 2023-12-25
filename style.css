@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url(BANNER.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.text{
+    font-size: 25px;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.traffic1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px 0px 60px;
+    height: 550px;
+}
+.trafficlights{
+    padding: 11px 0px 4px 0px;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 35px;
+    height: 210px;
+    width: 95px;
+    position: absolute;
+    /* background-color: purple; */
+}
+.trafficlights1{
+    margin-top: 35px;
+    margin-left: 1290px;
+    padding: 11px 0px 4px 0px;
+    text-align: right;
+    height: 210px;
+    width: 95px;
+    position: absolute;
+    /* background-color: purple; */
+}
+.red{
+    align-items: center;
+    margin: auto;
+    margin-bottom: 7px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    animation-name: redlight;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
+
+@keyframes redlight{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        background-color: red;
+    }
+    }
+
+
+.yellow{
+    margin: auto;
+    margin-bottom: 7px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    animation-name: yellowlight;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: ;
+    animation-delay: 6s;
+}
+
+@keyframes yellowlight{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        background-color: yellow;
+        right: 100%;
+    }
+    }
+
+.green{
+    margin: auto;
+    margin-bottom: 7px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    animation-name: greenlight;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: ;
+    animation-delay: 11s;
+}
+@keyframes greenlight{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        background-color: green;
+        right: 100%;
+    }
+    }
+
+.moving1{
+    z-index: 2;
+    top: 500px;
+    left: 50px;
+    right: 10px;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+@keyframes move{
+    0%{top: 500px; left: 50px; right: 10px;}
+    5%{top: 500px; left: 100px; right: 10px;}
+    10%{top: 500px; left: 200px; right: 10px;}
+    25%{top: 500px; left: 400px; right: 10px;}
+    45%{top: 500px; left: 600px; right: 10px;}
+    65%{top: 500px; left: 800px; right: 10px;}
+    85%{top: 500px; left: 1000px; right: 10px;}
+    100%{top: 500px; left: 1200px; right: 10px;}
+}
+.moving2{
+    z-index: 2;
+    top: 400px;
+    left: -5px;
+    right: 10px;
+    position: absolute;
+    animation-name: secondmove;
+    animation-duration: 20s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+@keyframes secondmove{
+0%{
+    left: -5px;
+}
+100%{
+    left: 1700px;
+}
+}
+.moving3{
+    z-index: 2;
+    transform: scaleX(-1);
+    top: 500px;
+    left: -50px;
+    right: 10px;
+    position: absolute;
+    animation-name: thirdmove;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+@keyframes thirdmove{
+    0%{
+        right: 10px;
+    }
+    100%{
+        right: 1800px;
+    }
+    }
+.moving4{
+    z-index: 2;
+    transform: scaleX(-1);
+    top: 450px;
+    left: -50px;
+    right: 400px;
+    position: absolute;
+    animation-name: fourthmove;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+@keyframes fourthmove{
+    0%{
+        right: 400px;
+    }
+    100%{
+        right: 2000px;
+    }
+}
+.moving5{
+    z-index: 1;
+    top: 400px;
+    left: 50px;
+    right: 100px;
+    position: absolute;
+    animation-name: fifthmove;
+    animation-duration: 20s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+@keyframes fifthmove{
+    0%{
+        left: 50px;
+    }
+    100%{
+        left: 1200px;
+    }
+}
+.moving6{
+    top: 40px;
+    left: -30px;
+    right: 0px;
+    position: absolute;
+    animation-name: sixthmove;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+@keyframes sixthmove{
+    0%{
+        left: -50px;
+    }
+    100%{
+        left: 1600px;
+    }
+}
+.moving7{
+    transform: scaleX(-1);
+    top: 400px;
+    left: 0px;
+    right: -220px;
+    position: absolute;
+    animation-name: seventhmove;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+@keyframes seventhmove{
+    0%{
+        right: -220px;
+    }
+    100%{
+        right: 1600px;
+    }
+}
